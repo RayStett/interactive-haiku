@@ -5,6 +5,7 @@ document.addEventListener("click", function () {
     // let min = 10; 
     // let max = 40; 
     rotation += randomNumber(1, 200); 
+    
     document.body.style.transform = `rotate(${rotation}deg)`; 
 }) 
 
@@ -16,6 +17,7 @@ function randomNumber(min, max) {
 let divs = document.querySelection(".grid-container div"); 
 
 function randomize() {
+    /*
     divs.forEach(function(div) {
         let scale = randomNumber(.5, 1.2);
         let translateX = randomNumber(0, 50);
@@ -25,10 +27,11 @@ function randomize() {
             `scale(${scale})
             translate(${translateX}%, ${translateY}%)
             rotate(${rotate}deg)`; 
-    })
-
+    }) 
+*/ 
     console.log(divs.length, "randomize! "); 
-}
+ 
+} 
 /*
 elements.forEach(function(ele) {
 	ele.style.transform = `rotate(${Math.random() * 360}deg)`;
